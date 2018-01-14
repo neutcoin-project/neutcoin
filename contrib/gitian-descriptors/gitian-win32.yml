@@ -31,7 +31,7 @@ script: |
   cd $HOME/build/
   #
   unzip neutcoin.zip
-  cp -r neutcoin.zip $OUTDIR/src
+  cp -r neutcoin.zip $OUTDIR/src/
   cp -r neutcoin nsis
   cd neutcoin
   export PATH=$STAGING/host/bin:$PATH
