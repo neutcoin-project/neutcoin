@@ -34,6 +34,7 @@ script: |
   cp -r neutcoin.zip $OUTDIR/src
   cp -r neutcoin nsis
   cd neutcoin
+  mkdir -p $OUTDIR/src/doc/
   export PATH=$STAGING/host/bin:$PATH
   cp $OUTDIR/src/doc/README_windows.txt $OUTDIR/readme.txt
   cp $OUTDIR/src/COPYING $OUTDIR/COPYING.txt
