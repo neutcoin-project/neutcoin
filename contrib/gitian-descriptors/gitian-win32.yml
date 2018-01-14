@@ -35,6 +35,8 @@ script: |
   cp -r neutcoin nsis
   cd neutcoin
   export PATH=$STAGING/host/bin:$PATH
+  cp $OUTDIR/src/doc/README_windows.txt $OUTDIR/readme.txt
+  cp $OUTDIR/src/COPYING $OUTDIR/COPYING.txt
   export LD_PRELOAD=/usr/lib/faketime/libfaketime.so.1
   export FAKETIME=$REFERENCE_DATETIME
   export TZ=UTC
